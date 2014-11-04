@@ -1,10 +1,8 @@
 Zendesk
 =======
 
-##### Contains: 
-
-* Projects I've contributed to while employed with Zendesk unless told to not include publicly (If there is a project that you know/think I was a part of but it is not contained in this repository feel free to reach out to me [@jeremiahcurrier](https://www.twitter.com/jeremiahcurrier))
-* Folders containing helpful links or code for Scripts, Oauth, iOS SDK, Help Center Themes, & more
+1. Projects I've contributed to while employed with Zendesk unless told to not include publicly (If there is a project that you know/think I was a part of but it is not contained in this repository feel free to reach out to me [@jeremiahcurrier](https://www.twitter.com/jeremiahcurrier))
+2. Folders containing helpful links or code for Scripts, Oauth, iOS SDK, Help Center Themes, & more
 
 Apps I've built and/or contributed to: 
 
