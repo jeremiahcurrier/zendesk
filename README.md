@@ -5,7 +5,7 @@ This repository contains all the projects I've contributed to while employed wit
 
 If there is a project that you know/think I was a part of but it is not contained in this repository feel free to reach out to me [@jeremiahcurrier](https://www.twitter.com/jeremiahcurrier)
 
-Apps: 
+Apps I've built and/or contributed to: 
 
 * [Link-builder](https://github.com/jeremiahcurrier/Link-Builder/graphs/contributors)
 * [List-suspended-users](https://github.com/ZendeskES/suspendedUsers/graphs/contributors)
