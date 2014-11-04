@@ -1,0 +1,8 @@
+<header>
+  <span class="logo"/>
+  <h3><a class="toggle-app"><i class="icon-minus"></i> {{setting "name"}}</a></h3>
+</header>
+<div class="app-container">
+<section data-main/>
+</div>
+<div class="modal hide fade" tabindex="-1" role="dialog" id="detailsModal"></div>

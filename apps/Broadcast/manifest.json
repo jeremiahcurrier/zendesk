@@ -1,0 +1,33 @@
+{
+  "name": "Broadcast App",
+  "author": {
+    "name": "Abel Martin Romero",
+    "email": "aromero@zendesk.com",
+    "url": "https://github.com/abelmartinromero"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": ["new_ticket_sidebar", "ticket_sidebar", "top_bar"],
+  "version": "1.0",
+  "frameworkVersion": "1.0",
+  "parameters":[
+    {
+      "name" : "tags",
+      "type" : "text",
+      "required" : "true"
+    },
+    {
+      "name" : "redAlertTag",
+      "type" : "text",
+      "required" : "true" 
+    },
+    {
+      "name" : "view_id",
+      "type" : "text"
+    },
+    {
+      "name" : "admin_group",
+      "type" : "text"
+    }
+  ]
+}

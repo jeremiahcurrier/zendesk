@@ -1,0 +1,2 @@
+<h4>{{t "yours"}} <span class="muted">{{minReadRounded}} min read</span></h4>
+<h4>{{t "previous"}} <span class="muted">{{minReadRoundedAll}} min read</span></h4>

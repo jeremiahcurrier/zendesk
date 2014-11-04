@@ -1,19 +1,20 @@
 {
   "app": {
-    "package": "app_name",
+    "package": "Minutes to Read",
     "description": {
-      "value": "Play the famous zen tunes in your help desk.",
+      "value": "This app tells you how long it will take the end-user to read your comment and estimates how long it will take for you to read the currentn comment thread.",
       "title": "app description"
-    },
-    "name": {
-      "value": "Buddha Machine",
-      "title": "app name"
     }
   },
 
-  "loading": {
-    "value": "Welcome to this Sample App",
-    "title": "loading placeholder"
+  "yours": {
+    "value": "Yours",
+    "title": "Yours"
+  },
+
+  "previous": {
+    "value": "Previous",
+    "title": "Previous"
   },
 
   "fetch": {

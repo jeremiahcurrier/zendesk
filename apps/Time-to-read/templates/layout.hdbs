@@ -1,0 +1,7 @@
+
+<section data-main/>
+<footer>
+  <p class="muted">Brought to you by: <a href="mailto:{{author.email}}">
+    {{author.name}}
+  </a></p>
+</footer>

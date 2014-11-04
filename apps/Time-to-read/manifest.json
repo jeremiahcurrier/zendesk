@@ -1,0 +1,29 @@
+{
+  "name": "Minutes to Read",
+  "author": {
+    "name": "Zendesk Labs",
+    "email": "zendesklabs@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": false,
+  "location": "ticket_sidebar",
+  "version": "1.0.1",
+  "frameworkVersion": "1.0",
+  "defaultLanguage": "en",
+  "parameters": [
+  {
+    "name": "endUserSpeed",
+    "type": "number",
+    "default": "180",
+    "required": true,
+    "helptext": "How many words per minute can you read? The average for an adult reading off a monitor is about 180."
+  },
+  {
+    "name": "agentSpeedDefault",
+    "type": "number",
+    "default": "180",
+    "required": true,
+    "helptext": "How many words per minute can your Agents read?"
+  }
+  ]
+}

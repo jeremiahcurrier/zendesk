@@ -1,0 +1,16 @@
+.btn {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.link {
+  font-size: 12px;
+}
+ol.problem_list {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.message_text{
+	width:97%;
+}
