@@ -1,0 +1,46 @@
+{
+  "name": "Problems App",
+  "author": {
+    "name" : "Zenlabs",
+    "email": "zenlabs@zendesk.com"
+     },
+   "frameworkVersion": "1.0",
+   "location":"nav_bar",
+   "defaultLocale": "en",
+   "private": true,
+   "singleInstall": true,
+   "parameters":
+   [
+     {
+      "name":"one",
+      "type":"number",
+      "required":true
+     },
+     {
+      "name":"three",
+      "type":"number",
+      "required":true
+     },
+     {
+      "name":"seven",
+      "type":"number",
+      "required":true
+     },
+     {
+      "name":"older",
+      "type":"number",
+      "required":true
+     },
+     {
+      "name": "sorts",
+      "type": "hidden", // On ZAT Validate it says with a type of "hidden" you're not allowed to set required to "true"
+      "required": false, // Switched to "false" to ensure this code validates with ZAT
+      "default": "{\"priority\": {\"criteria\": {\"name\": \"priority\", \"map\": {\"low\": 3, \"normal\": 2, \"high\": 1, \"urgent\": 0}}, \"order\": \"asc\"}, \"newest\":{\"criteria\": \"id\", \"order\": \"asc\"}, \"oldest\": {\"criteria\": \"id\", \"order\": \"asc\"}, \"incidents\": {\"criteria\": \"incident_count\", \"order\": \"desc\"}}"
+     },
+     {
+      "name": "filterField",
+      "type": "text",
+      "required": true
+     }
+    ]
+}

@@ -1,0 +1,52 @@
+<div class="trending_tickets_list_body">
+  <div class="control-group">
+    <select id="filter_dropdown" name="filter_dropdown">
+      {{#each filters}}
+        <option value="{{this.tag}}">{{this.name}} -- Note: This doesn't work right now.</option>
+      {{/each}}
+    </select>
+  </div>
+  <p>Here's all the <strong>trending problem tickets</strong> for this account:</p>
+  <ul>
+    {{#trending}}
+      <li>
+        <a href="#/tickets/{{id}}"> Problem ID: <strong>{{id}}</strong> | <strong>{{incidents}}</strong> incidents | Subject: "{{subject}}"</a>
+      </li>
+    {{/trending}}
+  </ul>
+  <div class="pagination pgination-centered">
+    <ul>
+      <li><a class="prev" href="#">«</a></li>
+        {{#pages}}
+          <li class="pagi pagi{{this}}"><a class="page_number" href="#">{{this}}</a></li>
+        {{/pages}}
+      <li><a class="next" href="#">»</a></li>
+    </ul> 
+  </div>
+</div>
+<div class="important_tickets_list_body">
+  <div class="control-group">
+    <select id="filter_dropdown" name="filter_dropdown">
+      {{#each filters}}
+        <option value="{{this.tag}}">{{this.name}} -- Note: This doesn't work right now.</option>
+      {{/each}}
+    </select>
+  </div>
+  <p>Here's all the <strong>important problem tickets</strong> for this account:</p>
+    <ul>
+      {{#each important}}
+        <li>
+          <a href="#/tickets/{{id}}"> Problem ID: <strong>{{id}}</strong> | <strong>{{incidents}}</strong> incidents | Subject: "{{subject}}"</a>
+        </li>
+      {{/each}}
+    </ul>
+  <div class="pagination pgination-centered">
+    <ul>
+      <li><a class="prev" href="#">«</a></li>
+        {{#pages}}
+          <li class="pagi pagi{{this}}"><a class="page_number" href="#">{{this}}</a></li>
+        {{/pages}}
+      <li><a class="next" href="#">»</a></li>
+    </ul> 
+  </div>
+</div>

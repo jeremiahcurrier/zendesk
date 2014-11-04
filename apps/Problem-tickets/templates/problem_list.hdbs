@@ -1,0 +1,34 @@
+<div class="tickets_list">
+  <form>
+    <div class="control-group">
+      <select id="filter_dropdown" name="filter_dropdown">
+        {{#each filters}}
+          <option value="{{this.tag}}">{{this.name}} -- Note: This only sort of works for "all the problem tickets" and still... not very well.</option>
+        {{/each}}
+      </select>
+    </div>
+  </form>
+  <div class="tickets_list_header"><h5>{{total}}</h5></div>
+  <div class="tickets_list_body">
+    <p>Here's <strong>all the problem tickets</strong> for this account:</p>
+    <ul>
+      {{#ticketsInfo}}
+        <li>
+          <a href="#/tickets/{{id}}">Problem ID: <strong>{{id}}</strong> | <strong>{{incident_count}}</strong> incidents | Subject: "{{subject}}"</a>
+        </li>
+      {{/ticketsInfo}}
+    </ul>
+  </div>
+  <div class="pagination pgination-centered">
+    <ul>
+      <li><a class="prev" href="#">«</a></li>
+        {{#pages}}
+          <li class="pagi pagi{{this}}"><a class="page_number" href="#">{{this}}</a></li>
+        {{/pages}}
+      <li><a class="next" href="#">»</a></li>
+    </ul> 
+  </div>
+    <div class="buttonHolder">
+      <input class="btn" type="button" value="GET Trending & Important Problem Tickets"/>
+    </div>
+</div>
