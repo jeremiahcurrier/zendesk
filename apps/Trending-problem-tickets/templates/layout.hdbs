@@ -1,0 +1,10 @@
+<header>
+  <h3>{{setting "name"}}</h3>
+</header>
+<div class="buttonHolder" >
+    <input class="btn" type="button" value="GET Trending Problems"/>
+</div>
+<section data-main/>
+<footer>
+  Brought to you by: <a href="mailto:{{author.email}}">{{author.name}}</a>
+</footer>

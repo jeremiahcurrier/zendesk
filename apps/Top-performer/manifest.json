@@ -1,0 +1,11 @@
+{
+  "name": "Top Performers",
+  "author": {
+    "name": "Jeremiah C., James R., Yaniv M., Adam L., & Avi W.", 
+    "email": "jcurrie@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "user_sidebar",
+  "frameworkVersion": "1.0"
+}

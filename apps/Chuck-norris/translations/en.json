@@ -1,0 +1,29 @@
+{
+    "app": {
+        "package": "chucknorris",
+        "description": {
+            "value": "Chuck Norris facts",
+            "title": "app description"
+        },
+        "name": {
+            "value": "Chuck Norris",
+            "title": "app name"
+        },
+        "parameters": {
+            "partyPooper": {
+                "label": {
+                    "value": "Activate Party Pooper mode",
+                    "title": "label of the setting"
+                },
+                "helpText": {
+                    "value": "This mode will turn the Chuck Norris App into a Safe For Work app, thus removing potentially offensive quotes. We strongly advise against it. Just because.",
+                    "title": "helpText."
+                }
+            }
+        },
+        "loading": {
+            "value": "Chuck Norris is warming up....",
+            "title": "loading placeholder"
+        }
+    }
+}

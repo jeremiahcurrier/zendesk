@@ -1,0 +1,35 @@
+{
+  "name": "Yo",
+  "author": {
+    "name": "Jeremiah",
+    "email": "jcurrier@zendesk.com",
+    "url": ""
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "noTemplate": true,
+  "version": "1.0",
+  "frameworkVersion": "1.0",
+  "parameters": [
+  {
+    "name": "token",
+    "type": "text",
+    "helptext": "This is your YO API token",
+    "required": true
+  },
+
+  {
+    "name": "username",
+    "type": "text",
+    "helptext": "This is the YO username to tell your agents to send a YO to in order to subscribe",
+    "required": true
+  },
+  {
+    "name": "installed",
+    "type": "hidden",
+    "value": "",
+    "default": "not_installed"
+  }
+  ]
+}

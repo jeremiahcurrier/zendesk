@@ -1,0 +1,2 @@
+<h2>Welcome back {{name}}</h2>
+<h3 class="{{color}}">Today you solved {{count}} tickets - {{text}}</h3>

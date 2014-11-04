@@ -1,0 +1,9 @@
+<div>
+  <div class="confirm">
+    <p>You're about to delete <strong>{{filteredTickets}}</strong> suspended tickets, please confirm below </p>
+  </div>
+  <div class="input-group">
+    <input type="text" class="form-control" id='inputValueId' placeholder="Enter value here"/>
+    <button class="btn submit">Confirm</button>
+  </div>
+<div>

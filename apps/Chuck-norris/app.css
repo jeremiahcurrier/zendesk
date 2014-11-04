@@ -1,0 +1,12 @@
+.fact{
+    font-size: 18px;
+    text-align: center;
+}
+.norris{
+    height: 240px;
+    display:block;
+    margin:auto;
+}
+.fail{
+    font-size: 22px;
+}

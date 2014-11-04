@@ -1,0 +1,44 @@
+{
+  "app": {
+    "package": "modal_sample_app",
+    "description":  {
+      "value": "Discover all about modal specific events, and invoking a modal",
+      "title": "app description"
+    },
+
+    "name": {
+      "value": "Modal Sample App",
+      "title": "app name"
+    }
+  },
+
+  // IN THE BODY OF THE APP
+
+  "modal_button": { // this is in the modal.hdbs in the div class of "modal_button_cell"
+    "value": "Delete tickets with selected causes", // TEXT IN THE button IN THE APP UI - not in the modal
+    "title": "Message on the button in the sidebar app interface"
+  },
+
+  // BELOW IS THE ACTUAL MODAL
+
+  "save_button": { // Unused
+    "value": "CONFIRM .save_button",
+    "title": "Message on the save button in modal"
+  },
+
+  "close_button": { // Unused
+    "value": "CANCEL .close_button",
+    "title": "Message on the close button in modal"
+  },
+
+  "modal_header": { // Unused
+   "value": "YOU SURE (modal header) - .modal_header", // TEXT IN THE header OF THE MODAL
+   "title": "Header message inside the modal window"
+  },
+
+  "modal_body": { // Unused
+    "value": "YOU SURE (modal body) - .modal_body", // TEXT IN THE body OF THE MODAL
+    "title": "Message inside a modal window that plays on the 'Keep Calm! Make a Zendesk App' phase"
+  }
+
+}

@@ -1,0 +1,91 @@
+{
+  "name" : "Suspended Ticket Nuke App",
+  "author" : {
+    "name" : "Jeremiah Currier",
+    "email" : "jeremiah@zendesk.com",
+    "url" : "https://github.com/jeremiahcurrier"
+  },
+  "defaultLocale" : "en",
+  "singleInstall" : true,
+  "private" : true,
+  "location" : "top_bar",
+  "version" : "2.0",
+  "frameworkVersion" : "1.0",
+  "parameters" : [
+    {
+      "name" : "\"Automated response email\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "General automated response email message from a server."
+    },
+
+    {
+      "name" : "\"Automated response email, delivery failed\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "This indicates that an outgoing email notification was not delivered to its recipient. The delivery failure email response is suspended so that a ticket is not created."
+    },
+
+    {
+      "name" : "\"Automated response email, out of office\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "Out of office and vacation auto-generated response emails are suspended."
+    },
+
+    {
+      "name" : "\"Automatic email processing failed\"",
+      "type" : "checkbox",
+      "required" : false
+    },
+
+    {
+      "name" : "\"Detected as email loop\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "If you receive a large number of emails from a single sender in a short period of time, those emails are suspended and the sender's address is blacklisted for one hour. This also happens to tickets that are sent from an address equal to your default Reply To address."
+    },
+
+    {
+      "name" : "\"Detected as spam\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "The email has been flagged as spam with a probability lower than 99%. If the probability is 99%, the email is rejected. The email might also have been flagged as spam because it is from a suspended user."
+    },
+
+    {
+      "name" : "\"Detected email as being from a system user\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "The email message came from an address associated with your Zendesk, and as such would cause a loop."
+    },
+
+    {
+      "name" : "\"Email for \"noreply\" address\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "For example noreply@domain.com"
+    },
+
+    {
+      "name" : "\"Email is from a blacklisted sender or domain\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "The email came from an address or domain that you've blacklisted."
+    },
+
+    {
+      "name" : "\"Received from Support Address\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "This email has placed the Requester as a Support Address. A Support Address can't be the Requester on a ticket, sorry."
+    },
+
+    {
+      "name" : "\"Submitted by registered user while logged out\"",
+      "type" : "checkbox",
+      "required" : false,
+      "helptext" : "If a registered user submits a ticket using the Submit a Request form while they are not logged in, the ticket will be suspended and a verification email will be sent to them. When the user clicks the verification link in the email the ticket will be unsuspended."
+    }
+  ]
+}

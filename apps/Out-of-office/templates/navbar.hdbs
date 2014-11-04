@@ -1,0 +1,38 @@
+<input class="search" type="text" id="filter_search" placeholder="Filter by name or email">
+
+<div id="maintemplate" class="well well-small">
+  <table id="agent_list" class="table">
+    <thead>
+      <tr>
+        <th class="srt_header"><span>Name</span></th>
+        <th class="srt_header"><span>Email</span></th>
+        <th class="srt_header"><span>Status</span></th>
+        {{#if permission}}
+        <th class="no sort header">Action</th>
+        {{/if}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#userlist}}
+          <tr id="{{id}}">
+            <td class="size"><a href="#/users/{{id}}">{{name}}</a></td>
+            <td class="size">{{email}}</td>
+
+
+            {{#if user_fields.agent_ooo}}
+            <td class="unavailable size"><span class="label label-important">Unavailable</span></td>
+            {{else}}
+            <td class="available size"><span class="label label-success">Available</span></td>
+            {{/if}}
+
+            {{#if ../permission}}
+            <td>
+            <button class="btn status-toggle navbar" value="{{id}}">Edit</button>
+            </td>
+            {{/if}}
+            <input type="hidden" value="{{name}},{{email}}" class="filter_field" >
+          </tr>
+      {{/userlist}}
+    </tbody>
+  </table>
+</div>

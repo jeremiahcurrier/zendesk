@@ -1,0 +1,25 @@
+/*This app desperately needs styling*/
+
+.confirm {
+  margin-bottom: 10px;
+}
+
+.filter-all {
+  width: 100%;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.nothingToDelete {
+  margin-bottom: 10px;
+}
+
+.submit {
+  width: 32%;
+}
+
+.waiting {
+  width: 100%;
+}

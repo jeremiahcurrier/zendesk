@@ -1,0 +1,13 @@
+{
+  "name": "suspendedUsers",
+  "author": {
+    "name": "jeremiah",
+    "email": "jcurrier@zendesk.com",
+    "url": "https://github.com/jeremiahcurrier"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "version": "1.0",
+  "frameworkVersion": "1.0"
+}

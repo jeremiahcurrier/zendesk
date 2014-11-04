@@ -1,0 +1,21 @@
+<div class="modal hide fade my_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+  <button class="close" data-dismiss="modal" aria-hidden="true" type="button">x</button>
+  <h2>Please Confirm</h2>
+  </div>
+  
+  <div class="modal-body">
+    <h3 class="my_modal_label">You're about to delete <span class="badge badge-success">{{filteredTickets}}</span> suspended tickets. Enter this value below to confirm.</h3>
+    
+    <div class="input-group">
+      <input type="text" class="form-control" id='inputValueId'/>
+      <button type="submit" class="btn button-submit">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- Below is what show's up in the layout.hdbs file -->
+
+<div class="modal_button_cell">
+  <a class="btn btn-large" data-toggle="modal" data-target=".my_modal">Delete <span class="badge badge-success">{{filteredTickets}}</span> Suspended Tickets</a>
+</div>

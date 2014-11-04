@@ -1,0 +1,54 @@
+{
+  "app": {
+    "package": "app package",
+    "description": {
+      "value": "app description value",
+      "title": "app description title"
+    },
+    "name": {
+      "value": "app name value",
+      "title": "app name title"
+    }
+  },
+
+  "loading": {
+    "value": "loading value",
+    "title": "loading title"
+  },
+
+  "fetch": {
+    "done": {
+      "value": "fetch done value",
+      "title": "fetch done title"
+    },
+    "fail": {
+      "value": "fetch fail value",
+      "title": "fetch fail title"
+    }
+  },
+
+  "id": {
+    "value": "id value",
+    "title": "id title"
+  },
+
+  "email": {
+    "value": "email value",
+    "title": "email title"
+  },
+
+  "name": {
+    "value": "name value",
+    "title": "name title"
+  },
+
+  "role": {
+    "value": "role value",
+    "title": "role title"
+  },
+
+  "groups": {
+    "value": "groups",
+    "title": "groups title"
+  }
+}

@@ -1,0 +1,236 @@
+* {
+  font-family: proxima-nova, sans-serif;
+}
+
+input[type=checkbox] {
+  float: left;
+  margin-left: 10px;
+}
+
+.p-assignee {
+  margin-bottom: 6px;
+}
+
+.p-user {
+  margin-bottom: 6px;
+  font-size: 120%;
+}
+
+span#foo {
+  padding-right: 46px;
+}
+
+label {
+  width: 260px;
+  padding-bottom: 12px;
+}
+
+table#agent_list.table {
+  margin-bottom: -10px;
+  margin-top: -6px;
+}
+
+th, td {
+  vertical-align: center;
+  text-align: center;
+  bg-color: dark;
+  border-color: dark;
+  font-color: #ccc;
+  padding: 12px 8px 12px 8px;
+  width: 20%;
+  border-style: dashed;
+}
+
+th, th span {
+  font-size: 18px;
+  position: relative;
+}
+
+th span:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 7px;
+  height: 9px;
+  margin-top:-4px;
+  background: transparent app-asset-url("sorty.png") 0 0;
+}
+
+th.asc span:before {
+  background: transparent app-asset-url("sorty.png") -8px 0px;
+}
+
+th.desc span:before {
+  background: transparent app-asset-url("sorty.png") 8px 0px;
+}
+
+th.asc, th.desc {
+  background: #eee;
+}
+
+
+td.size {
+  padding-top: 18px;
+  font-size: 16px;
+}
+
+#available {
+  color: white;
+}
+
+#unavailable {
+  color: white;
+}
+
+.borderStyle {
+  border-style: dashed;
+}
+
+.btn {
+  padding: 20px 0px;
+  font-weight: 450;
+  font-size: 20px;
+}
+
+.btn-available {
+  width: 160px;
+  border-radius: 3px;
+}
+
+.btn.btn-busy.btn-primary.red {
+  bg-color: dark;
+  border-color: dark;
+  font-color: #ccc;
+  width: 160px;
+}
+
+.btn.btn-cancel.modalCancel {
+  color: dark;
+  float: left;
+  width: 242px;
+  margin-left: 10px;
+}
+
+.btn.btn-primary.btn-confirm.modalAccept {
+  bg-color: #ddd;
+  border-color: #ddd;
+  font-color: #fff;
+  float: right;
+  width: 242px;
+  padding: 0px;
+  margin-right: 8px;
+}
+
+.button.btn.status-toggle {
+  vertical-align: center;
+  text-align: left;
+  padding: 4px 8px;
+}
+
+.btn-busy {
+  width: 160px;
+  border-radius: 3px;
+}
+
+/*.btn.date {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 150px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.btn.date.dateEnd {
+  float: right;
+  margin-right: 1px;
+  margin-left: 2px;
+}
+
+.btn.date.dateStart {
+  float: left;
+  margin-right: 2px;
+  margin-left: 1px;
+}*/
+
+.btn.status-toggle.navbar {
+  bg-color: dark;
+  border-color: dark;
+  font-color: #ccc;
+  padding: 4px 8px;
+}
+
+.button.btn.status-toggle.navbar {
+  bg-color: dark;
+  border-color: dark;
+  font-color: #ccc;
+}
+
+.creators {
+  text-align: center;
+  font-size: 85%;
+  margin-top: 6px;
+}
+
+.label {
+  margin-top: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+.label.label-success {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.modal p {
+  font-size: 16px;
+  padding-bottom: 0px;
+}
+
+div.modal-body p {
+  font-family: proxima-nova, sans-serif;
+}
+
+.modal-header.modalHeaderPosition {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.users-name {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.search {
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 200%;
+  margin-bottom: 25px;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+}
+#ticket_dash p {
+  font-size: 120%;
+}
+
+#ticket_dash p .label {
+  font-size: 100%;
+}
+
+button.btn-canel {
+  clear: both;
+}
+
+span.option {
+  display: block;
+  left: 0;
+  margin-right: 65%;
+}

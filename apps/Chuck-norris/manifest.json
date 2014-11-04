@@ -1,0 +1,20 @@
+{
+  "name": "Chuck Norris App",
+  "author": {
+    "name": "Chuck Norris",
+    "email": "chuck@norris.com"
+  },
+  "defaultLocale": "en",
+  "private": false,
+  "location": ["ticket_sidebar", "new_ticket_sidebar"],
+  "version": "1.1",
+  "frameworkVersion": "1.0",
+  "singleInstall": true,
+  "parameters": [
+    {
+      "name": "partyPooper",
+      "type": "checkbox",
+      "required": false
+    }
+  ]
+}

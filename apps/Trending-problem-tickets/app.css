@@ -1,0 +1,43 @@
+.buttonHolder {
+   text-align: center;
+}
+
+p {
+   margin-bottom: 5px;
+}
+
+.btn {
+   width:320px;
+   border-top: 1px solid #009b77;
+   background: #009b77;
+   background: -webkit-gradient(linear, left top, left bottom, from(#007c5f), to(#009b77));
+   background: -webkit-linear-gradient(bottom, #007c5f, #009b77);
+   background: -moz-linear-gradient(bottom, #007c5f, #009b77);
+   background: -ms-linear-gradient(bottom, #007c5f, #009b77);
+   background: -o-linear-gradient(bottom, #007c5f, #009b77);
+   padding: 6px 12px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 0.5px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 0.5px 0;
+   box-shadow: rgba(0,0,0,1) 0 0.5px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+
+.btn:hover {
+   border-top-color: #19a584;
+   background: #19a584;
+   color: #ccc;
+}
+
+.btn:active {
+   border-top-color: #66c3ad;
+   background: #66c3ad;
+}
