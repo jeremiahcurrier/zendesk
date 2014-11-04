@@ -1,9 +1,10 @@
 Zendesk
 =======
 
-This repository contains all the projects I've contributed to while employed with Zendesk unless told to not include it. 
+##### Contains: 
 
-If there is a project that you know/think I was a part of but it is not contained in this repository feel free to reach out to me [@jeremiahcurrier](https://www.twitter.com/jeremiahcurrier)
+* Projects I've contributed to while employed with Zendesk unless told to not include publicly (If there is a project that you know/think I was a part of but it is not contained in this repository feel free to reach out to me [@jeremiahcurrier](https://www.twitter.com/jeremiahcurrier))
+* Folders containing helpful links or code for Scripts, Oauth, iOS SDK, Help Center Themes, & more
 
 Apps I've built and/or contributed to: 
 
@@ -18,5 +19,3 @@ Apps I've built and/or contributed to:
 * [Top-performer](https://github.com/jeremiahcurrier/Top-performer/graphs/contributors)
 * [Time-to-read](https://github.com/jstjoe/minutes_to_read/graphs/contributors)
 * [Broadcast](https://github.com/abelmartinromero/broadcast_app/graphs/contributors)
-
-

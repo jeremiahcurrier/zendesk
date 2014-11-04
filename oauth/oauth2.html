@@ -1,0 +1,59 @@
+<html> 
+<head> 
+    <title>OAuth Grant Test</title> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+</head> 
+<body> 
+    <p id="text"></p> 
+    <p id="response" style="display: none;"><span style="float: left; margin-right: 10px;">Response:</span><textarea id="response_area" style="width: 500px; height:200px;"></textarea></p> 
+    <img id="spinner" src="https://raw.github.com/sjhcockrell/spinners/master/gif/spinner_16.gif" style="display:none;" /> 
+    <form action="https://thorium.zendesk.com/oauth/authorizations/new" id="authorize" style="display:none;" method="GET"> 
+        <input type="hidden" name="client_id" value="advocateexample" /> 
+        <input type="hidden" name="response_type" value="token" /> 
+        <input type="hidden" name="redirect_uri" value="http://0.0.0.0:4331/oauth2.html" /> 
+        <!-- Space separated scope --> 
+        <input type="text" name="scope" value="read%20write" /> 
+        <input type="submit" value="Authorize!" /> 
+    </form> 
+    <script type="text/javascript"> 
+    // http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery 
+    function getHashParameter(name) { return decodeURIComponent((new RegExp('[#|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.hash)||[,""])[1].replace(/\+/g, '%20'))||null; } $(document).ready(function() { var error = getHashParameter("error"); var token = getHashParameter("access_token"); if(error) { $("#text").html(getHashParameter("error_description")); $("#authorize").show(); } else if(token) { $("#text").html("Received token: " + token + ". Initiating OAuth ticket request."); var spinner = $("#spinner"); spinner.show(); 
+    //Make the call to the v2 API with your token in the header 
+    $.ajax('https://thorium.zendesk.com/api/v2/tickets.json', { 
+        method: 'GET', beforeSend: function(xhr) { 
+            xhr.setRequestHeader("Authorization", "Bearer " + token); } 
+        }).done(function(data, textStatus, xhr) { 
+            $("#response_area").html(JSON.stringify(data)); 
+            $("#response").show() 
+        }).fail(function(xhr, textStatus, errorThrown) { 
+            console.log(xhr); console.log(textStatus); 
+            console.log(errorThrown); 
+            $("#response_area").html("An error occured, check the console."); 
+            $("#response").show() }).complete(function() { 
+                spinner.hide(); $("#authorize").show(); 
+            }); 
+        } else { 
+            $("#authorize").show(); 
+        } 
+    }); 
+</script> 
+</body> 
+</html>
+
+<!--$.ajax('https://trustbuilder.zendesk.com/api/v2/tickets.json', { 
+        method: 'GET', beforeSend: function(xhr) { 
+            xhr.setRequestHeader("Authorization", "Bearer 48ff66499cb82f57ef38abab8a170fcf7bcf1927c3515fc6de6be7bf5424ef76"); } 
+        }).done(function(data, textStatus, xhr) { 
+            console.log(data); });-->
+
+<!-- var payload = '{"ticket":{"subject":"My printer is on fire!", "comment": { "body": "The smoke is very colorful." }}}'
+ 
+            $.ajax('https://trustbuilder.zendesk.com/api/v2/tickets.json', {
+              method: 'POST',
+              data: payload,
+              contentType: 'application/json',
+              dataType: 'json',
+              beforeSend: function(xhr) {
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+              }
+            }); -->
