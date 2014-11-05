@@ -10,7 +10,7 @@ Apps I've built and/or contributed to:
 * [List-suspended-users](https://github.com/ZendeskES/suspendedUsers/graphs/contributors)
 * [Suspended-ticket-nuke](https://github.com/jeremiahcurrier/Suspended-ticket-nuke/graphs/contributors)
 * [Out-of-office](https://github.com/ZendeskES/out-of-office-app/graphs/contributors)
-* [Yo-target-app](https://github.com/jeremiahcurrier/Yo-integration/graphs/contributors)
+* [Yo-integration](https://github.com/jeremiahcurrier/Yo-integration/graphs/contributors)
 * [Chuck-norris](https://github.com/zendesklabs/chucknorris_app/graphs/contributors)
 * [Trending-problem-tickets](https://github.com/jeremiahcurrier/Trending-problem-tickets/graphs/contributors)
 * [Problems-tickets](https://github.com/zendesklabs/problems_app/graphs/contributors)
