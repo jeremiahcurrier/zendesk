@@ -17,3 +17,4 @@ Apps I've built and/or contributed to:
 * [Top-performer](https://github.com/jeremiahcurrier/Top-performer/graphs/contributors)
 * [Time-to-read](https://github.com/jstjoe/minutes_to_read/graphs/contributors)
 * [Broadcast](https://github.com/abelmartinromero/broadcast_app/graphs/contributors)
+* [Closed-and-follow-up-tickets](https://github.com/jeremiahcurrier/follow-up-ticket-list/graphs/contributors)
