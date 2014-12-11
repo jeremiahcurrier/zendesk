@@ -1,0 +1,31 @@
+<h2 style="margin-bottom: 10px; color: #555">Closed tickets with follow ups: <span style="color: black;">{{filteredTickets}}</span></h2>
+
+<button class="btn go_back" type="button">Back</button>
+
+&nbsp;<a href="data:text/csv;charset=utf-8,ClosedTicketID%2CFollowUpTicketIDs%0A{{#each results}}{{closedTicketID}}%2C{{followupIDs}}%0A{{/each}}" download="closedTicketsFollowupTickets.csv" class="btn"><i class="icon-download-alt"></i> Download CSV</a>
+<br>
+<br>
+<div class="alert hidden">There is an outstanding bug with Chrome causing the file to download without a .csv extension. Just rename it to something.csv and open as normal.</div>
+
+<div class="csv well well-medium">
+  <table class="table">
+    <thead style="border-style: solid;">
+      <tr>
+        <th style="width: 0.25%;"></th>
+        <th style="color: #555; font-size: 13px; letter-spacing: 0.15px;"><span>Closed Ticket ID</span></th>
+        <th style="color: #555; font-size: 13px; letter-spacing: 0.15px;"><span>Follow Up ID(s)</span></th>
+        <th style="width: 0.25%;"></th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each results}}
+      <tr>
+        <td style="width: 0.25%;"></td>
+        <td><a style="color: #555; font-size: 13px; letter-spacing: 0.25px;" href="#/tickets/{{closedTicketID}}">{{closedTicketID}}</a></td>
+        <td style="color: #555; font-size: 13px; letter-spacing: 0.25px;">{{followupIDs}}</td>
+        <td style="width: 0.25%;"></td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

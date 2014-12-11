@@ -1,0 +1,13 @@
+{
+  "name": "List Closed Tickets And Their Follow Ups",
+  "author": {
+    "name": "Jeremiah",
+    "email": "jeremiah@zendesk.com",
+    "url": "https://github.com/jeremiahcurrier"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "nav_bar",
+  "version": "1.0",
+  "frameworkVersion": "1.0"
+}
